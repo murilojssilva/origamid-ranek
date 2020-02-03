@@ -11,6 +11,18 @@
       "numero": "19",
       "estado": "RJ",
       "cidade": "Rio de Janeiro"
+    },
+    {
+      "id": "cjssbr@hotmail.com",
+      "email": "cjssbr@hotmail.com",
+      "nome": "Cleber de Jesus Santos Silva",
+      "senha": "Alemanha_10",
+      "rua": "Rua José Veríssimo",
+      "cep": "20720180",
+      "complemento": "Apartamento 408",
+      "numero": "19",
+      "estado": "RJ",
+      "cidade": "Rio de Janeiro"
     }
   ],
   "produto": [
