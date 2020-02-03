@@ -1,8 +1,5 @@
 <template>
   <ul v-if="paginasTotal > 1">
-    {{
-      paginas
-    }}
     <li v-for="pagina in paginasTotal" :key="pagina">
       <router-link :to="{ query: query(pagina) }">{{ pagina }}</router-link>
     </li>
