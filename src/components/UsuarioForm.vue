@@ -12,6 +12,13 @@
     <input id="rua" name="rua" type="text" v-model="rua" />
     <label for="numero">Numero</label>
     <input id="numero" name="numero" type="text" v-model="numero" />
+    <label for="complemento">Complemento</label>
+    <input
+      id="complemento"
+      name="complemento"
+      type="text"
+      v-model="complemento"
+    />
     <label for="bairro">Bairro</label>
     <input id="bairro" name="bairro" type="text" v-model="bairro" />
     <label for="cidade">Cidade</label>
@@ -25,13 +32,33 @@
 </template>
 
 <script>
-export default {};
+import { mapFields } from "@/helpers";
+export default {
+  computed: {
+    ...mapFields({
+      fields: [
+        "nome",
+        "email",
+        "senha",
+        "rua",
+        "cep",
+        "complemento",
+        "numero",
+        "bairro",
+        "cidade",
+        "estado"
+      ],
+      base: "usuario",
+      mutation: "UPDATE_USUARIO"
+    })
+  }
+};
 </script>
 
 <style scoped>
 form {
   display: grid;
-  grid-template-columns: 80px 1fr;
+  grid-template-columns: 100px 1fr;
   align-items: center;
 }
 
