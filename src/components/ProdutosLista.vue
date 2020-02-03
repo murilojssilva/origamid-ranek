@@ -79,10 +79,7 @@ export default {
 }
 
 .produto:hover {
-  box-shadow: 0 6px 12px rgba(30, 60, 90, 0.2);
   transform: scale(1.1);
-  position: relative;
-  z-index: 1;
 }
 
 .produto img {

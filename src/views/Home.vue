@@ -2,8 +2,8 @@
   <div class="home">
     <section>
       <h1>Compre ou venda</h1>
-      <ProdutosLista />
       <ProdutosBuscar />
+      <ProdutosLista />
     </section>
   </div>
 </template>
